@@ -1,27 +1,62 @@
 {
-  "name": "react-component-library",
-  "version": "0.0.1",
+  "name": "@tinacoding/react-component-lib",
+  "version": "0.0.2",
   "description": "react component library",
   "author": "tina",
   "license": "MIT",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-a11y": "^6.4.18",
+    "@storybook/addon-actions": "^6.4.18",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/addon-links": "^6.4.18",
+    "@storybook/addon-storysource": "^6.4.18",
+    "@storybook/react": "^6.4.18",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.4.0",
     "@types/react": "^17.0.39",
-    "react": "^17.0.2",
+    "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.3",
+    "chromatic": "^6.4.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1",
+    "postcss": "^8.4.6",
+    "react": "^16.14.0",
+    "react-dom": "^16.8.0",
     "rollup": "^2.67.1",
     "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.3.1",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "webpack": "2"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/tinacoding"
+  },
+  "repository": {
+    "url": "https://github.com/tinacoding/react-component-lib",
+    "type": "git"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react-dom": "^16.8.0"
+  }
 }

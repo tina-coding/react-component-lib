@@ -1,6 +1,7 @@
 import React from 'react';
+import "./Button.styles.css";
 
-interface ButtonProps extends HTMLButtonElement {
+export interface ButtonProps {
     label: string;
 };
 
